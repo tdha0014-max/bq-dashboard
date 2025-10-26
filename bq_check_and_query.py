@@ -1,0 +1,1 @@
+from google.cloud import bigquerytry:    client = bigquery.Client.from_service_account_json(        "/Users/thomasrodriquez/Downloads/bigquery-service.json"    )    print("Client berhasil dibuat!")except Exception as e:    print("Terjadi error saat membuat client atau membaca kredensial:", e)
